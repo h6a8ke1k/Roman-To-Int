@@ -7,6 +7,8 @@ public class Main {
         System.out.println(romanToInt("IXC"));
     }
 
+    // If the roman numeral is written in official forms, this function is
+    // far too complicated.
     private static int romanToIntSub(String input, int sum, int sign) {
         if (input.equals("")) return sum;
         int[] vn = findMax(input);
@@ -64,7 +66,9 @@ public class Main {
     }
 
 
-    // below is other people's solution, which I think is wrong in certain cases.
+    // below is other people's solution, which is enough for official forms of
+    // roman numerals. For strange forms like "IXC" (91, which should be "XCI"
+    // in official forms), this function can return incorrect answers.
     static int[] temp2 = new int[91];
     static{
         temp2['I'] = 1;
