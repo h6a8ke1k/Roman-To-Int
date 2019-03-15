@@ -3,8 +3,8 @@ public class Main {
     private static int[] mapInt = {1, 5, 10, 50, 100, 500, 1000};
 
     public static void main(String[] args) {
-        System.out.println(romanToIntSub("IXC", 0, 1));
-        System.out.println(romanToInt("IXC"));
+        System.out.println(romanToIntSub("MCMXCIV", 0, 1));
+        System.out.println(romanToInt("MCMXCIV"));
     }
 
     // If the roman numeral is written in official forms, this function is
